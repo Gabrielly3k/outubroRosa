@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUTUBRO ROSA</title>
+    <style>
+        body {
+            background-image: url("https://example.com/outubro-rosa-background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 49px;
+            font-family: 'Arial', sans-serif;
+            color: pink;
+            animation: slideIn 1s ease;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        p {
+            text-align: left;
+            font-size: 30px;
+            font-family: 'Arial', sans-serif;
+            border-radius: 15px;
+            box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+            margin: 90px auto;
+            width: 90%;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            animation: fadeInUp 1s ease;
+        }
+
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .barra {
+            background-color: pink;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 105px;
+            animation: slideIn 1s ease;
+        }
+
+        .barra h1 {
+            text-align: center;
+            color: white;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .button-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(255, 3, 179);
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: rgb(253, 6, 220);
+            transform: scale(1.2);
+        }
+
+        .text {
+            font-size: 33px;
+            margin-top: 10px;
+            text-align: center;
+            display: none;
+            opacity: 1;
+        }
+
+        .text.visible {
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+<div class="barra">
+    <h1>OUTUBRO ROSA X CÂNCER DE MAMA </h1>
+</div>
+
+<div class="inicio">
+    <h1>O QUE É OUTUBRO ROSA?</h1>
+    <p>
+        “Outubro Rosa” é uma campanha mundial de conscientização sobre a importância da prevenção e do diagnóstico precoce do câncer de mama. 
+        O movimento busca informar sobre a doença e incentivar a realização de exames regulares, como a mamografia e o autoexame, que podem salvar vidas. 
+        O câncer de mama é um dos tipos mais comuns entre mulheres, mas com a detecção precoce, as chances de tratamento e cura são muito maiores. 
+        A campanha também visa promover o apoio e a solidariedade entre mulheres que enfrentam essa batalha, ressaltando a importância do autocuidado e do amor-próprio.
+    </p>
+</div>
+
+<div class="objetivo">
+    <h1>OBJETIVO</h1>
+    <p>
+        O principal objetivo da campanha “Outubro Rosa” é alertar a população sobre a importância da prevenção e do diagnóstico precoce do câncer de mama. 
+        A conscientização promovida pelo “Outubro Rosa” é essencial para que mulheres conheçam os fatores de risco e as formas de detecção da doença. 
+        Realizar exames regulares, como a mamografia e o autoexame, pode salvar vidas. Além disso, a campanha busca desmistificar preconceitos e estigmas associados ao câncer de mama, incentivando o diálogo aberto sobre a saúde feminina. 
+        O apoio emocional e a solidariedade entre mulheres são fundamentais durante essa jornada, promovendo a união e a força coletiva na luta contra a doença.
+
+        Portanto, o “Outubro Rosa” é uma campanha de grande relevância, que não apenas informa e educa a população sobre o câncer de mama, mas também promove a saúde e o bem-estar de todas as mulheres.
+    </p>
+</div>
+
+<div class="button-container">
+    <div class="button-wrapper">
+        <button class="button" id="button1">MOTIVAÇÃO</button>
+        <div class="text hidden" id="text1">*A cada exame, um passo a mais na sua jornada de autocuidado. Cuide-se sempre*</div>
+    </div>
+    
+    <div class="button-wrapper">
+        <button class="button" id="button2">ESPERANÇA</button>
+        <div class="text hidden" id="text2">*Juntas, somos mais fortes. A esperança renasce a cada dia na luta contra o câncer de mama.*</div>
+    </div>
+    
+    <div class="button-wrapper">
+        <button class="button" id="button3">AJUDA</button>
+        <div class="text hidden" id="text3">*Não hesite em buscar apoio: a informação e o carinho fazem toda a diferença.*</div>
+    </div>
+    
+    <div class="button-wrapper">
+        <button class="button" id="button4">APOIO</button>
+        <div class="text hidden" id="text4">*A solidariedade é a nossa melhor arma. Vamos nos unir na luta e no apoio umas às outras*</div>
+    </div>
+    
+    <div class="button-wrapper">
+        <button class="button" id="button5">FORÇA</button>
+        <div class="text hidden" id="text5">*A força que existe em você é capaz de transformar desafios em vitórias. Acredite*</div>
+    </div>
+</div>
+
+<div class="video-container" style="text-align: center; margin: 40px auto;">
+    <h1>VIDEO SOBRE OUTUBRO ROSA</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LVvhfT4Eg-U?si=u_jMoYZHNCIYaszI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<script> 
+    document.querySelectorAll('.button').forEach(button => {
+        button.addEventListener('click', () => {
+            const textId = `text${button.id.replace('button', '')}`;
+            const textElement = document.getElementById(textId);
+            
+            // Toggle visibility
+            textElement.classList.toggle('visible');
+            textElement.classList.toggle('hidden');
+        });
+    });
+</script>
+</body>
+</html>
+
